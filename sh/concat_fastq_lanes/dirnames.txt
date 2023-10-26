@@ -1,0 +1,4 @@
+/full_path_to/wherever_the_files_are_stored/sample_name_1
+/full_path_to/wherever_the_files_are_stored/sample_name_2
+/full_path_to/wherever_the_files_are_stored/sample_name_3
+/full_path_to/wherever_the_files_are_stored/sample_name_4
