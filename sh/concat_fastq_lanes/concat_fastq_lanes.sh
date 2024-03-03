@@ -11,11 +11,11 @@ IFS=$'\n'
 
 for path_sample in `cat ./dirnames.txt `; do
 				
-				# Replace everything before the first slash with nothing (get just the sample ID)
+	# Replace everything before the first slash with nothing (get just the sample ID)
         sample_name=$(echo $path_sample | sed 's|.*/||')
         echo '-------------------- PROCESSING ' $sample_name '-----------------------'
 				
-				# Capture everything before the first slash
+	# Capture everything before the first slash
         path=$(echo $path_sample | sed 's|\(.*\)/.*|\1|')
 
         R1_files=$(find $path -type f -name "${sample_name}_L00*_R1_001.fastq.gz" | sort -n)
